@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8261209758781964527}
   - component: {fileID: 448279218834381215}
+  - component: {fileID: -7028714997097737012}
   m_Layer: 0
   m_Name: Mini_van
   m_TagString: Untagged
@@ -82,3 +83,18 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &-7028714997097737012
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981395490068572841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9222575ba4cc84429862bba90bc4c886, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints: []
+  enemyMoveSpeed: 2
+  waveConfig: {fileID: 11400000, guid: 5a19bfb7639944dfcac821d34c66e5b0, type: 2}
