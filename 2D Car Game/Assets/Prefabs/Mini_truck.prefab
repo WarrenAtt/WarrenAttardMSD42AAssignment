@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4579326470929899341}
   - component: {fileID: 139662816619075427}
-  - component: {fileID: -162973648008002118}
+  - component: {fileID: 7837230148727825064}
   m_Layer: 0
   m_Name: Mini_truck
   m_TagString: Untagged
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-162973648008002118
+--- !u!114 &7837230148727825064
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

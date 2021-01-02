@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8261209758781964527}
   - component: {fileID: 448279218834381215}
-  - component: {fileID: -7028714997097737012}
+  - component: {fileID: 5437966404419799668}
   m_Layer: 0
   m_Name: Mini_van
   m_TagString: Untagged
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &-7028714997097737012
+--- !u!114 &5437966404419799668
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

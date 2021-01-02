@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8200769006953022952}
   - component: {fileID: 90658475549266239}
-  - component: {fileID: 6933855510326335979}
+  - component: {fileID: 452229652840039219}
   m_Layer: 0
   m_Name: taxi
   m_TagString: Untagged
@@ -83,7 +83,7 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &6933855510326335979
+--- !u!114 &452229652840039219
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
