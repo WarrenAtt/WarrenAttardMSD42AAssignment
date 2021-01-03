@@ -13,6 +13,8 @@ GameObject:
   - component: {fileID: 5835898494421044504}
   - component: {fileID: -3681963970732088900}
   - component: {fileID: 892250315884984879}
+  - component: {fileID: 3907539034392173052}
+  - component: {fileID: 9090254570157551315}
   m_Layer: 0
   m_Name: Car
   m_TagString: Untagged
@@ -160,3 +162,37 @@ PolygonCollider2D:
       - {x: 0.45, y: -0.77}
       - {x: 0.45, y: -0.31}
       - {x: 0.42, y: 0.45999998}
+--- !u!114 &3907539034392173052
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3164702599711676324}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe5af57ca7cb04c0aad8a0b47bc731f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 2
+--- !u!50 &9090254570157551315
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3164702599711676324}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0

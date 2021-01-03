@@ -12,6 +12,8 @@ GameObject:
   - component: {fileID: 90658475549266239}
   - component: {fileID: 452229652840039219}
   - component: {fileID: -1089905945048941277}
+  - component: {fileID: -2658662640509230578}
+  - component: {fileID: -7743296167669480036}
   m_Layer: 0
   m_Name: taxi
   m_TagString: Untagged
@@ -142,3 +144,37 @@ PolygonCollider2D:
       - {x: 0.32999998, y: -0.94}
       - {x: 0.39999998, y: -0.72999996}
       - {x: 0.42999998, y: -0.42}
+--- !u!114 &-2658662640509230578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8166441430302357503}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe5af57ca7cb04c0aad8a0b47bc731f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 4
+--- !u!50 &-7743296167669480036
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8166441430302357503}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
