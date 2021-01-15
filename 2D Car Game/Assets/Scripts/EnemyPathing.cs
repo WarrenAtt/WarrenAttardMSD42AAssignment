@@ -9,6 +9,8 @@ public class EnemyPathing : MonoBehaviour
 
     [SerializeField] WaveConfig waveConfig;
 
+    int scoreValue = 5;
+
     //saves the waypoint in which we want to go
     int waypointIndex = 0;
 
@@ -50,6 +52,8 @@ public class EnemyPathing : MonoBehaviour
         }
         else
         {
+            FindObjectOfType<GameSession>().AddToScore(scoreValue);
+
             Destroy(gameObject);
         }
     }

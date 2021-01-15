@@ -81,6 +81,8 @@ public class Player : MonoBehaviour
 
     private void Die()
     {
+        health = 0;
+
         Destroy(gameObject);
 
         //instantiate explosion effects
@@ -90,7 +92,21 @@ public class Player : MonoBehaviour
 
         AudioSource.PlayClipAtPoint(playerDeathSound, Camera.main.transform.position, playerDeathSoundVolume);
 
-        //find the object of type Level from the hierarcht and load its method LoadGameOver()
-        FindObjectOfType<Level>().LoadGameOver();
+        int score = FindObjectOfType<GameSession>().GetScore();
+
+        if (score < 100)
+        {
+            //find the object of type Level from the hierarcht and load its method LoadGameOver()
+            FindObjectOfType<Level>().LoadGameOver();
+        }
+        else
+        {
+            FindObjectOfType<Level>().LoadYouWon();
+        }
+    }
+
+    public int GetHealth()
+    {
+        return health;
     }
 }
