@@ -7,7 +7,7 @@ public class Level : MonoBehaviour
 {
     [SerializeField] float delayInSeconds = 2f;
 
-    IEnumerator WaitAndLoad()
+    IEnumerator WaitAndLoads()
     {
         yield return new WaitForSeconds(delayInSeconds);
         SceneManager.LoadScene("GameOver");
@@ -20,7 +20,7 @@ public class Level : MonoBehaviour
 
     public void LoadGameOver()
     {
-        StartCoroutine(WaitAndLoad());
+        StartCoroutine(WaitAndLoads());
     }
 
     public void LoadStartMenu()
@@ -30,8 +30,8 @@ public class Level : MonoBehaviour
 
     public void QuitGame()
     {
-        print("Quit");
-        //wont quit the editor, only in EXE programs
+        print("quit");
+        //works only as EXE programs
         Application.Quit();
     }
 }
