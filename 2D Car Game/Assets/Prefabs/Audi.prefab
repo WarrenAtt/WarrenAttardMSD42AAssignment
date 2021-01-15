@@ -12,7 +12,9 @@ GameObject:
   - component: {fileID: 1759620199655724777}
   - component: {fileID: -1150847400629968579}
   - component: {fileID: 253258026214856414}
-  m_Layer: 0
+  - component: {fileID: -9030831448963435118}
+  - component: {fileID: -309639696545544307}
+  m_Layer: 8
   m_Name: Audi
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -96,8 +98,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 510632ce67a644d129cefd2878a5f0db, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  movementSpeed: 10
-  health: 10
+  movementSpeed: 8
+  health: 50
+  deathVFX: {fileID: 5206869827993583581, guid: c3ef244c83d8a449dabc56c6aab2f16e, type: 3}
+  explosionDuration: 1
+  playerDeathSound: {fileID: 8300000, guid: 60df393ae91434ce1997845290a81ecf, type: 3}
+  playerDeathSoundVolume: 0.75
 --- !u!60 &253258026214856414
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -145,3 +151,37 @@ PolygonCollider2D:
       - {x: 0.29, y: -1.09}
       - {x: 0.39, y: -1.01}
       - {x: 0.47, y: -0.84}
+--- !u!50 &-9030831448963435118
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7933996251657679784}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
+--- !u!114 &-309639696545544307
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7933996251657679784}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe5af57ca7cb04c0aad8a0b47bc731f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 100

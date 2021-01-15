@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 892250315884984879}
   - component: {fileID: 3907539034392173052}
   - component: {fileID: 9090254570157551315}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Car
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,11 +113,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59c89b2f3d3ca416eab09f46f1cc89d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 1
   shotCounter: 0
   minTimeBetweenShots: 0.2
   maxTimeBetweenShots: 1
   enemyLaserPrefab: {fileID: 1126546437057941539, guid: 9a1e583055c5d414c93e0467a83567fc, type: 3}
   enemyLaserSpeed: 5
+  shoot: 1
+  deathVFX: {fileID: 5206869827993583581, guid: c3ef244c83d8a449dabc56c6aab2f16e, type: 3}
+  explosionDuration: 1
+  enemyDeathSound: {fileID: 8300000, guid: 60df393ae91434ce1997845290a81ecf, type: 3}
+  enemyDeathSoundVolume: 0.75
 --- !u!60 &892250315884984879
 PolygonCollider2D:
   m_ObjectHideFlags: 0

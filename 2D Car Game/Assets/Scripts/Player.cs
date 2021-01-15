@@ -8,9 +8,15 @@ public class Player : MonoBehaviour
 
     [SerializeField] float movementSpeed = 10f;
 
-    [SerializeField] float health = 10f;
+    [SerializeField] int health = 50;
 
     float padding = 0.5f;
+
+    [SerializeField] GameObject deathVFX;
+    [SerializeField] float explosionDuration = 1f;
+
+    [SerializeField] AudioClip playerDeathSound;
+    [SerializeField] [Range(0, 1)] float playerDeathSoundVolume = 0.75f;
 
     // Start is called before the first frame update
     void Start()
@@ -69,7 +75,22 @@ public class Player : MonoBehaviour
         dmgDealer.Hit();
         if (health <= 0)
         {
-            Destroy(gameObject);
+            Die();
         }
+    }
+
+    private void Die()
+    {
+        Destroy(gameObject);
+
+        //instantiate explosion effects
+        GameObject explosion = Instantiate(deathVFX, transform.position, Quaternion.identity);
+        //destroy after explosionDuration (1f)
+        Destroy(explosion, explosionDuration);
+
+        AudioSource.PlayClipAtPoint(playerDeathSound, Camera.main.transform.position, playerDeathSoundVolume);
+
+        //find the object of type Level from the hierarcht and load its method LoadGameOver()
+        FindObjectOfType<Level>().LoadGameOver();
     }
 }

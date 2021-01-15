@@ -13,9 +13,10 @@ GameObject:
   - component: {fileID: 8471382136267594130}
   - component: {fileID: 5623126433727921786}
   - component: {fileID: 3903001976801044545}
-  - component: {fileID: 8705636779437072439}
   - component: {fileID: -4517976905163536788}
-  m_Layer: 0
+  - component: {fileID: 8705636779437072439}
+  - component: {fileID: -3127434836387365924}
+  m_Layer: 10
   m_Name: Black_viper
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -113,11 +114,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 59c89b2f3d3ca416eab09f46f1cc89d5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  health: 100
   shotCounter: 0
   minTimeBetweenShots: 0.5
   maxTimeBetweenShots: 2
   enemyLaserPrefab: {fileID: 1126546437057941539, guid: 9a1e583055c5d414c93e0467a83567fc, type: 3}
   enemyLaserSpeed: 4
+  shoot: 1
+  deathVFX: {fileID: 5206869827993583581, guid: c3ef244c83d8a449dabc56c6aab2f16e, type: 3}
+  explosionDuration: 1
+  enemyDeathSound: {fileID: 8300000, guid: 60df393ae91434ce1997845290a81ecf, type: 3}
+  enemyDeathSoundVolume: 0.75
 --- !u!60 &3903001976801044545
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -125,7 +132,7 @@ PolygonCollider2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3822239396418268319}
-  m_Enabled: 1
+  m_Enabled: 0
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -165,19 +172,6 @@ PolygonCollider2D:
       - {x: 0.21, y: -0.95}
       - {x: 0.28, y: -0.84999996}
       - {x: 0.39, y: -0.58}
---- !u!114 &8705636779437072439
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3822239396418268319}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe5af57ca7cb04c0aad8a0b47bc731f3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  damage: 1
 --- !u!50 &-4517976905163536788
 Rigidbody2D:
   serializedVersion: 4
@@ -199,3 +193,32 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &8705636779437072439
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3822239396418268319}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe5af57ca7cb04c0aad8a0b47bc731f3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damage: 1
+--- !u!70 &-3127434836387365924
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3822239396418268319}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 2.56, y: 2.56}
+  m_Direction: 0

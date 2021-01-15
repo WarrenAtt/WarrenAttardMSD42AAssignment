@@ -9,9 +9,6 @@ public class EnemySpawner : MonoBehaviour
 
     [SerializeField] bool looping = false;
 
-    //start from Wave 0
-    int startingWave = 0;
-
     // Start is called before the first frame update
     IEnumerator Start()
     {

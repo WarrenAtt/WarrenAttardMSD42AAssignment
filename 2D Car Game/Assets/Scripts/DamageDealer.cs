@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class DamageDealer : MonoBehaviour
 {
-    [SerializeField] public int damage = 100;
+    [SerializeField] public int damage = 1;
 
     //returns the amount of damage
     public int GetDamage()
@@ -15,6 +15,6 @@ public class DamageDealer : MonoBehaviour
     //destroys the gameObject
     public void Hit()
     {
-        Destroy(gameObject);
+        //Destroy(gameObject);
     }
 }

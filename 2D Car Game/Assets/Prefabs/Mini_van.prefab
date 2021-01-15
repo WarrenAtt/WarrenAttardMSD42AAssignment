@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 6477774950069095914}
   - component: {fileID: 1625619125543225791}
   - component: {fileID: 4770449862686380591}
-  m_Layer: 0
+  - component: {fileID: -5681331125023267444}
+  m_Layer: 10
   m_Name: Mini_van
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,3 +175,26 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+--- !u!114 &-5681331125023267444
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 981395490068572841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59c89b2f3d3ca416eab09f46f1cc89d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 100
+  shotCounter: 0
+  minTimeBetweenShots: 0.2
+  maxTimeBetweenShots: 3
+  enemyLaserPrefab: {fileID: 1126546437057941539, guid: 9a1e583055c5d414c93e0467a83567fc, type: 3}
+  enemyLaserSpeed: 0.3
+  shoot: 0
+  deathVFX: {fileID: 5206869827993583581, guid: c3ef244c83d8a449dabc56c6aab2f16e, type: 3}
+  explosionDuration: 1
+  enemyDeathSound: {fileID: 8300000, guid: 60df393ae91434ce1997845290a81ecf, type: 3}
+  enemyDeathSoundVolume: 0.75
