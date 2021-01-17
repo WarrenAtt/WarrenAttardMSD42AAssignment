@@ -9,6 +9,9 @@ public class EnemyPathing : MonoBehaviour
 
     [SerializeField] WaveConfig waveConfig;
 
+    [SerializeField] AudioClip scoreSound;
+    [SerializeField] [Range(0, 1)] float scoreSoundVolume = 0.75f;
+
     int scoreValue = 5;
 
     //saves the waypoint in which we want to go
@@ -53,6 +56,7 @@ public class EnemyPathing : MonoBehaviour
         else
         {
             FindObjectOfType<GameSession>().AddToScore(scoreValue);
+            AudioSource.PlayClipAtPoint(scoreSound, Camera.main.transform.position, scoreSoundVolume);
 
             Destroy(gameObject);
         }

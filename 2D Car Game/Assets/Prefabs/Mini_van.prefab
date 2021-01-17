@@ -101,6 +101,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waypoints: []
   waveConfig: {fileID: 11400000, guid: 5a19bfb7639944dfcac821d34c66e5b0, type: 2}
+  scoreSound: {fileID: 8300000, guid: 26a07d2a62a164182ae296ac6150c272, type: 3}
+  scoreSoundVolume: 0.4
 --- !u!60 &6477774950069095914
 PolygonCollider2D:
   m_ObjectHideFlags: 0
