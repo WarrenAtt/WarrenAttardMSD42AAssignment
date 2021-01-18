@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SimpleCarGame.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
+    path: Assets/Scenes/Win.unity
+    guid: 2de748d93584b421a98d2b1f365b154f
+  - enabled: 1
     path: Assets/Scenes/GameOver.unity
     guid: 242c56903d6e648c9b8ae611452e17fe
   m_configObjects: {}

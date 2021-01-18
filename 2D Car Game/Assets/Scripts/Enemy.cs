@@ -6,8 +6,6 @@ using Random = UnityEngine.Random;
 
 public class Enemy : MonoBehaviour
 {
-    
-
     [SerializeField] int health = 100;
     [SerializeField] float shotCounter;
     [SerializeField] float minTimeBetweenShots = 0.2f;
@@ -90,8 +88,6 @@ public class Enemy : MonoBehaviour
     private void Die()
     {
         Destroy(gameObject);
-
-        
 
         //instantiate explosion effects
         GameObject explosion = Instantiate(deathVFX, transform.position, Quaternion.identity);
